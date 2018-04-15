@@ -13,33 +13,19 @@
         <!--PokerBuddy-->
         <scene sceneID="i2k-tM-POb">
             <objects>
-                <tableViewController id="hTM-f6-GA7" sceneMemberID="viewController">
+                <tableViewController id="hTM-f6-GA7" customClass="PokerHomeTableViewController" customModule="poker_buddy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dhG-1y-9Hr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeCell" id="o6D-Vr-TMn">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokerHomeCell" id="o6D-Vr-TMn">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o6D-Vr-TMn" id="MnF-bh-nWM">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Qul-p1-VfT" kind="show" id="cbv-6w-4ht"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeSubCell" id="UaN-LT-R0n">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UaN-LT-R0n" id="iga-UR-HVE">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Uck-48-qyd" kind="show" id="Vze-zC-DRx"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -48,15 +34,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="PokerBuddy" id="YtI-TR-Xcb"/>
+                    <connections>
+                        <outlet property="pokerHomeTableView" destination="dhG-1y-9Hr" id="Y5T-mH-kz1"/>
+                        <segue destination="Qul-p1-VfT" kind="show" identifier="HomeToInfo" id="IcE-Qf-ecx"/>
+                        <segue destination="Uck-48-qyd" kind="show" identifier="HomeToDetail" id="eFH-lE-Ql9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEA-E7-bwA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="796" y="682"/>
+            <point key="canvasLocation" x="850" y="658"/>
         </scene>
-        <!--View Controller-->
+        <!--Information-->
         <scene sceneID="40A-Uc-goT">
             <objects>
-                <viewController id="Qul-p1-VfT" sceneMemberID="viewController">
+                <viewController title="Information" id="Qul-p1-VfT" customClass="PokerInfoViewController" customModule="poker_buddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ozK-LZ-zAS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,18 +57,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9OK-6x-Pmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2914" y="681"/>
+            <point key="canvasLocation" x="3009" y="681"/>
         </scene>
-        <!--Table View Controller-->
+        <!--More Options-->
         <scene sceneID="STX-cA-xmJ">
             <objects>
-                <tableViewController id="Uck-48-qyd" sceneMemberID="viewController">
+                <tableViewController title="More Options" id="Uck-48-qyd" customClass="PokerDetailTableViewController" customModule="poker_buddy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="h0b-gz-ZVU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailCell" id="28X-R8-ZNe">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" id="28X-R8-ZNe">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="28X-R8-ZNe" id="vaa-5G-Zsf">
@@ -85,7 +76,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Qul-p1-VfT" kind="show" id="jrx-yF-q93"/>
+                                    <segue destination="Qul-p1-VfT" kind="show" identifier="DetailToInfo" id="jrx-yF-q93"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -97,7 +88,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhm-ID-vQ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847" y="1160"/>
+            <point key="canvasLocation" x="1926" y="1083"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DoP-9B-eqj">
@@ -113,10 +104,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFa-sQ-pZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-157" y="682"/>
+            <point key="canvasLocation" x="-170" y="657"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jrx-yF-q93"/>
+        <segue reference="IcE-Qf-ecx"/>
     </inferredMetricsTieBreakers>
 </document>
