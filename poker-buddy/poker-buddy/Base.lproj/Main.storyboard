@@ -51,7 +51,18 @@
                     <view key="view" contentMode="scaleToFill" id="ozK-LZ-zAS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10H.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ujw-tH-uv9">
+                                <rect key="frame" x="-0.5" y="32" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ujw-tH-uv9" firstAttribute="centerX" secondItem="l7R-Sf-UlR" secondAttribute="centerX" id="8ph-8h-x3q"/>
+                            <constraint firstItem="Ujw-tH-uv9" firstAttribute="centerY" secondItem="l7R-Sf-UlR" secondAttribute="centerY" id="FUI-oC-3qB"/>
+                            <constraint firstItem="Ujw-tH-uv9" firstAttribute="width" secondItem="ozK-LZ-zAS" secondAttribute="width" id="agc-lu-CUd"/>
+                            <constraint firstItem="Ujw-tH-uv9" firstAttribute="height" secondItem="ozK-LZ-zAS" secondAttribute="height" id="ccK-ZO-QJX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="l7R-Sf-UlR"/>
                     </view>
                 </viewController>
@@ -107,6 +118,9 @@
             <point key="canvasLocation" x="-170" y="657"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="10H.png" width="691" height="1056"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IcE-Qf-ecx"/>
     </inferredMetricsTieBreakers>
