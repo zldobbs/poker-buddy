@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "options": [
+    {
+      "title": "Game Flow",
+      "desc": "Draw, Turn, Flop, River"
+    },
+    {
+      "title": "Betting",
+      "desc": "always go all-in"
+    },
+    {
+      "title": "Blinds vs Antes",
+      "desc": "blinds are small or big, antes are erryone"
+    }
+  ]
+}

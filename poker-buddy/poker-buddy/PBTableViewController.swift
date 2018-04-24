@@ -1,29 +1,38 @@
 //
-//  PokerDetailTableViewController.swift
+//  PBTableViewController.swift
 //  poker-buddy
 //
-//  Created by Zachary Dobbs on 4/15/18.
+//  Created by Zachary Dobbs on 4/23/18.
 //  Copyright © 2018 Zachary Dobbs. All rights reserved.
 //
 
 import UIKit
 
-class PokerDetailTableViewController: UITableViewController {
-
-    var option: String?
+class PBTableViewController: UITableViewController {
     
+    @IBOutlet var detailViewTable: UITableView!
+    var option: String?
+    // list of options for current location
+    var oList: [Option]?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        if (option != nil) {
+        switch (option) {
+        case "How to Play":
             self.title = option
-        }
-        else {
-            self.title = "More Options"
+            oList = PBJSONLoader.load(fileName: "playing_options")
+        case "Strategies":
+            self.title = option
+            oList = PBJSONLoader.load(fileName: "strategy_options")
+        default:
+            print("bad option sent to table")
+            self.title = "invalid"
         }
     }
 
@@ -36,23 +45,31 @@ class PokerDetailTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        if (oList != nil) {
+            return (oList?.count)!
+        }
+        else {
+            return 0
+        }
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCell", for: indexPath)
 
         // Configure the cell...
-
+        if (oList != nil) {
+            cell.textLabel?.text = oList?[indexPath.row].title
+        }
+        
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -89,14 +106,18 @@ class PokerDetailTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? PBDetailViewController,
+            let row = detailViewTable.indexPathForSelectedRow?.row
+        {
+            if (oList != nil) {
+                destination.option = oList?[row]
+            }
+        }
     }
-    */
 
 }

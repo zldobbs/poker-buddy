@@ -71,13 +71,19 @@
 		E42CA8E7208E81C600497966 /* JS.png in Resources */ = {isa = PBXBuildFile; fileRef = E42CA8A7208E81C600497966 /* JS.png */; };
 		E42CA8E8208E81C600497966 /* 2C.png in Resources */ = {isa = PBXBuildFile; fileRef = E42CA8A8208E81C600497966 /* 2C.png */; };
 		E42CA8E9208E81C600497966 /* purple_back.png in Resources */ = {isa = PBXBuildFile; fileRef = E42CA8A9208E81C600497966 /* purple_back.png */; };
+		E42CA8EB208E862000497966 /* PBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CA8EA208E862000497966 /* PBHomeViewController.swift */; };
+		E42CA8ED208E865300497966 /* PBHandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CA8EC208E865300497966 /* PBHandsViewController.swift */; };
+		E42CA8EF208E866900497966 /* PBDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CA8EE208E866900497966 /* PBDetailViewController.swift */; };
+		E42CA8F1208E867E00497966 /* PBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CA8F0208E867E00497966 /* PBTableViewController.swift */; };
+		E42CA8F4208EA7F800497966 /* playing_options.json in Resources */ = {isa = PBXBuildFile; fileRef = E42CA8F2208EA7F800497966 /* playing_options.json */; };
+		E42CA8F5208EA7F800497966 /* strategy_options.json in Resources */ = {isa = PBXBuildFile; fileRef = E42CA8F3208EA7F800497966 /* strategy_options.json */; };
+		E42CA8F7208EA81B00497966 /* PBJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CA8F6208EA81B00497966 /* PBJSONParser.swift */; };
+		E42CA8F9208EA82600497966 /* PBJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CA8F8208EA82600497966 /* PBJSONLoader.swift */; };
+		E42CA8FB208EA8B100497966 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42CA8FA208EA8B100497966 /* Option.swift */; };
 		E4D28D082083C8F900548142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D28D072083C8F900548142 /* AppDelegate.swift */; };
 		E4D28D0D2083C8F900548142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D28D0B2083C8F900548142 /* Main.storyboard */; };
 		E4D28D0F2083C8F900548142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D28D0E2083C8F900548142 /* Assets.xcassets */; };
 		E4D28D122083C8F900548142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D28D102083C8F900548142 /* LaunchScreen.storyboard */; };
-		E4D28D1D2083FCF300548142 /* PokerHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D28D1C2083FCF300548142 /* PokerHomeTableViewController.swift */; };
-		E4D28D1F2083FD0C00548142 /* PokerDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D28D1E2083FD0C00548142 /* PokerDetailTableViewController.swift */; };
-		E4D28D212083FD3300548142 /* PokerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D28D202083FD3300548142 /* PokerInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,15 +151,21 @@
 		E42CA8A7208E81C600497966 /* JS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JS.png; sourceTree = "<group>"; };
 		E42CA8A8208E81C600497966 /* 2C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2C.png; sourceTree = "<group>"; };
 		E42CA8A9208E81C600497966 /* purple_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple_back.png; sourceTree = "<group>"; };
+		E42CA8EA208E862000497966 /* PBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBHomeViewController.swift; sourceTree = "<group>"; };
+		E42CA8EC208E865300497966 /* PBHandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBHandsViewController.swift; sourceTree = "<group>"; };
+		E42CA8EE208E866900497966 /* PBDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBDetailViewController.swift; sourceTree = "<group>"; };
+		E42CA8F0208E867E00497966 /* PBTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBTableViewController.swift; sourceTree = "<group>"; };
+		E42CA8F2208EA7F800497966 /* playing_options.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = playing_options.json; sourceTree = "<group>"; };
+		E42CA8F3208EA7F800497966 /* strategy_options.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = strategy_options.json; sourceTree = "<group>"; };
+		E42CA8F6208EA81B00497966 /* PBJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBJSONParser.swift; sourceTree = "<group>"; };
+		E42CA8F8208EA82600497966 /* PBJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBJSONLoader.swift; sourceTree = "<group>"; };
+		E42CA8FA208EA8B100497966 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		E4D28D042083C8F900548142 /* poker-buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "poker-buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D28D072083C8F900548142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4D28D0C2083C8F900548142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4D28D0E2083C8F900548142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D28D112083C8F900548142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4D28D132083C8F900548142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4D28D1C2083FCF300548142 /* PokerHomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerHomeTableViewController.swift; sourceTree = "<group>"; };
-		E4D28D1E2083FD0C00548142 /* PokerDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerDetailTableViewController.swift; sourceTree = "<group>"; };
-		E4D28D202083FD3300548142 /* PokerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,9 +275,10 @@
 				E4D28D0E2083C8F900548142 /* Assets.xcassets */,
 				E4D28D102083C8F900548142 /* LaunchScreen.storyboard */,
 				E4D28D132083C8F900548142 /* Info.plist */,
-				E4D28D1C2083FCF300548142 /* PokerHomeTableViewController.swift */,
-				E4D28D1E2083FD0C00548142 /* PokerDetailTableViewController.swift */,
-				E4D28D202083FD3300548142 /* PokerInfoViewController.swift */,
+				E42CA8EA208E862000497966 /* PBHomeViewController.swift */,
+				E42CA8EC208E865300497966 /* PBHandsViewController.swift */,
+				E42CA8EE208E866900497966 /* PBDetailViewController.swift */,
+				E42CA8F0208E867E00497966 /* PBTableViewController.swift */,
 			);
 			path = "poker-buddy";
 			sourceTree = "<group>";
@@ -273,7 +286,12 @@
 		E4D28D192083FC3A00548142 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E42CA8F2208EA7F800497966 /* playing_options.json */,
+				E42CA8F3208EA7F800497966 /* strategy_options.json */,
 				E42CA869208E812D00497966 /* Cards */,
+				E42CA8F6208EA81B00497966 /* PBJSONParser.swift */,
+				E42CA8F8208EA82600497966 /* PBJSONLoader.swift */,
+				E42CA8FA208EA8B100497966 /* Option.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -352,6 +370,7 @@
 				E42CA8CE208E81C600497966 /* honors_spade-14.png in Resources */,
 				E42CA8C7208E81C600497966 /* aces.png in Resources */,
 				E42CA8E5208E81C600497966 /* 7H.png in Resources */,
+				E42CA8F5208EA7F800497966 /* strategy_options.json in Resources */,
 				E42CA8C3208E81C600497966 /* QC.png in Resources */,
 				E42CA8B0208E81C600497966 /* 6S.png in Resources */,
 				E42CA8BE208E81C600497966 /* 3H.png in Resources */,
@@ -395,6 +414,7 @@
 				E42CA8C2208E81C600497966 /* KC.png in Resources */,
 				E42CA8C9208E81C600497966 /* JH.png in Resources */,
 				E42CA8E6208E81C600497966 /* 6H.png in Resources */,
+				E42CA8F4208EA7F800497966 /* playing_options.json in Resources */,
 				E42CA8B7208E81C600497966 /* QH.png in Resources */,
 				E42CA8D3208E81C600497966 /* KH.png in Resources */,
 				E42CA8CD208E81C600497966 /* gray_back.png in Resources */,
@@ -413,10 +433,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D28D212083FD3300548142 /* PokerInfoViewController.swift in Sources */,
-				E4D28D1F2083FD0C00548142 /* PokerDetailTableViewController.swift in Sources */,
-				E4D28D1D2083FCF300548142 /* PokerHomeTableViewController.swift in Sources */,
+				E42CA8FB208EA8B100497966 /* Option.swift in Sources */,
+				E42CA8F7208EA81B00497966 /* PBJSONParser.swift in Sources */,
+				E42CA8F9208EA82600497966 /* PBJSONLoader.swift in Sources */,
+				E42CA8F1208E867E00497966 /* PBTableViewController.swift in Sources */,
 				E4D28D082083C8F900548142 /* AppDelegate.swift in Sources */,
+				E42CA8ED208E865300497966 /* PBHandsViewController.swift in Sources */,
+				E42CA8EB208E862000497966 /* PBHomeViewController.swift in Sources */,
+				E42CA8EF208E866900497966 /* PBDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

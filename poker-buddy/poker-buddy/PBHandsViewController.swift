@@ -1,26 +1,19 @@
 //
-//  PokerInfoViewController.swift
+//  PBHandsViewController.swift
 //  poker-buddy
 //
-//  Created by Zachary Dobbs on 4/15/18.
+//  Created by Zachary Dobbs on 4/23/18.
 //  Copyright © 2018 Zachary Dobbs. All rights reserved.
 //
 
 import UIKit
 
-class PokerInfoViewController: UIViewController {
+class PBHandsViewController: UIViewController {
 
-    var option: String?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-        if (option != nil) {
-            self.title = option
-        }
-        else {
-            self.title = "Poker Info"
-        }
     }
 
     override func didReceiveMemoryWarning() {
