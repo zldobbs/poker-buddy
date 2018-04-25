@@ -84,6 +84,7 @@
 		E4D28D0D2083C8F900548142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D28D0B2083C8F900548142 /* Main.storyboard */; };
 		E4D28D0F2083C8F900548142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D28D0E2083C8F900548142 /* Assets.xcassets */; };
 		E4D28D122083C8F900548142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D28D102083C8F900548142 /* LaunchScreen.storyboard */; };
+		E4F4F177209033F300688EDA /* title_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E4F4F176209033F200688EDA /* title_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +167,7 @@
 		E4D28D0E2083C8F900548142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D28D112083C8F900548142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4D28D132083C8F900548142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4F4F176209033F200688EDA /* title_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +288,7 @@
 		E4D28D192083FC3A00548142 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E4F4F176209033F200688EDA /* title_logo.png */,
 				E42CA8F2208EA7F800497966 /* playing_options.json */,
 				E42CA8F3208EA7F800497966 /* strategy_options.json */,
 				E42CA869208E812D00497966 /* Cards */,
@@ -409,6 +412,7 @@
 				E4D28D0D2083C8F900548142 /* Main.storyboard in Resources */,
 				E42CA8E9208E81C600497966 /* purple_back.png in Resources */,
 				E42CA8C1208E81C600497966 /* 4H.png in Resources */,
+				E4F4F177209033F300688EDA /* title_logo.png in Resources */,
 				E42CA8AC208E81C600497966 /* red_back.png in Resources */,
 				E42CA8AA208E81C600497966 /* 2D.png in Resources */,
 				E42CA8C2208E81C600497966 /* KC.png in Resources */,

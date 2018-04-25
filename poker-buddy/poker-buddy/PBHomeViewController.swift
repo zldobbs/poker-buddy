@@ -54,7 +54,7 @@ class PBHomeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "Poker Buddy"
+        self.title = "Home"
         homeTableView.delegate = self
         homeTableView.dataSource = self
     }
