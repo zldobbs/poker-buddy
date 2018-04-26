@@ -1,17 +1,21 @@
 {
-  "status": "ok",
-  "options": [
+    "status": "ok",
+    "options": [
     {
-      "title": "Game Flow",
-      "desc": "Draw, Turn, Flop, River"
+                "title": "Taking Turns",
+                "desc": "A game of poker consists of multiple hands. Each player takes a turn playing the current hand until the final draw or until everyone but one person folds. To FOLD is to leave the current hand. You may do this on any turn. You may CHECK if there is NO bet currently on the table. This leaves you in the game, but you do not set a bet. If there is a bet and it is your turn, you must either FOLD, CALL, or BET. If you CALL, you agree to stake whatever the current bet is. You may also RAISE which involves setting a bet that is higher than the current."
     },
     {
-      "title": "Betting",
-      "desc": "always go all-in"
+                "title": "Drawing",
+                "desc": "Each stage of the hand allows for each remaining player a chance to play. After each player has played, the stage advances. The first stage involves no cards drawn on the table. The next stage is the FLOP in which one card is BURNED from the deck followed by three cards being drawn and placed face up on the table. Next comes the TURN in which one card is BURNED and one card is played to the table. Then the RIVER will BURN one card and play the final card to the table. After everyone plays on the RIVER, the player's hands will be evaulated and the round will end. "
     },
     {
-      "title": "Blinds vs Antes",
-      "desc": "blinds are small or big, antes are erryone"
+                "title": "Winning the Game",
+                "desc": "Each player is dealt two card at the start of the game. Players must keep these cards a secret throughout the duration of the hand, until it is time to reveal the hand. A player's hand is a combination of their two cards and the 5 cards on the table. The player's best 5 cards from these 7 total will be evaluated, none more and none less. If the game reaches the final turn and all remaining players reveal their hands, the winner is determined by whoever has the highest hand ranking (see Hand Rankings)."
+    },
+    {
+                "title": "Blinds and Antes",
+                "desc": "Before starting each hand players will receive their cards and have to decide whether or not they want to play the hand. This is decided through either BLINDS or ANTES. An ANTE is a constant amount that each player must automatically bet regardless of whether or not they plan on playing. BLINDS consist of small and big. A BIG BLIND requires a player to bet the full amount regardless of whether or not they wanted to play (similar to an ANTE). A SMALL BLIND only requires a player to bet a portion of the BIG BLIND initially, with the option of folding before betting the other half."
     }
   ]
 }
