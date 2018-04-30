@@ -3,11 +3,19 @@
   "options": [
     {
       "title": "Playing a 7-2 Draw",
-      "desc": "the best way to play a 7-2 draw..."
+      "desc": "Holding 2 and 7 off suit is considered the worst hand in Texas Hold 'em. They are the lowest two cards you can have that cannot make a straight (there are five cards between 2 and 7). Even if they are suited, they will make you a very low flush, and if either makes pairs, it is a low hand. Because it is the worst, some players will play it for fun, and in online games, it is known as the hammer."
     },
     {
       "title": "Betting Agressively",
-      "desc": "you gotta know when to hold them, and when to walk away"
+      "desc": "Aggressive play refers to betting and raising. Passive play refers to checking and calling. Unless passive play is being used deceptively as mentioned above, aggressive play is generally considered stronger than passive play because of the bluff value of bets and raises and because it offers more opportunities for your opponents to make mistakes."
+    },
+    {
+      "title": "Deception",
+      "desc": "By employing deception, a poker player hopes to induce their opponent(s) to act differently from how they would if they could see their cards. David Sklansky has argued that winning at poker is often decided by how much one player can force another to change his/her style while successfully maintaining their own strategy. Bluffing is a form of deception where players bet strongly on a weak hand to induce opponents to fold superior hands. Related is the semi-bluff, in which a player who does not have a strong hand, but has a chance to improve it to a strong hand in later rounds, bets strongly on the hand in the hopes of inducing other players with weaker made hands to fold. Slow-playing is deceptive play in poker that is roughly the opposite of bluffing: checking or betting weakly with a strong holding,attempting to induce other players with weaker hands to call or raise the bet instead of folding, to increase the payout."
+    },
+    {
+      "title": "Position",
+      "desc": "Position refers to the order in which players are seated around the table and the strategic consequences of this. Generally, players in earlier position (who have to act first) need stronger hands to bet/raise or call than players in later position. For example, if there are five opponents yet to act behind a player, there is a greater chance one of the yet to act opponents will have a better hand than if there were only one opponent yet to act. Being in late position is an advantage because a player gets to see how their opponents in earlier position act (which provides the player more information about their hands than they have about his). This information, coupled with a low bet to a late player, may allow the player to limp in with a weaker hand when they would have folded the same hand if they'd had to act earlier. Position is one of the most vital elements to understand in order to be a long-term winning player. As a player's position improves, so too does the range of cards with which they can profitably enter a hand. Conversely this commonly held knowledge can be used to an intelligent poker player's advantage. If playing against observant opponents, then a raise with any two cards can 'steal the blinds,' if executed against passive players at the right time."
     }
   ]
 }
